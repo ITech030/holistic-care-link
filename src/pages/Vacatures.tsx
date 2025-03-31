@@ -3,7 +3,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import HeroSection from "@/components/HeroSection";
 import VacancyCard from "@/components/VacancyCard";
-import { Search, MapPin, Briefcase, Filter } from "lucide-react";
+import { Search, MapPin, Briefcase, Filter, Users, Award, BarChart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // Mock data for vacancies
