@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,30 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				nexus: {
+					50: '#e6f7ff',
+					100: '#ccefff',
+					200: '#99dfff',
+					300: '#66cfff',
+					400: '#33bfff',
+					500: '#1EAEDB', // Primary blue
+					600: '#0099cc',
+					700: '#007399',
+					800: '#004d66',
+					900: '#002633',
+				},
+				care: {
+					50: '#f0f9ff',
+					100: '#e1f3fe',
+					200: '#D3E4FD', // Soft blue accent
+					300: '#a5d8ef',
+					400: '#7cc2e4',
+					500: '#33C3F0', // Sky blue
+					600: '#0FA0CE', // Bright blue
+					700: '#0e7490',
+					800: '#155e75',
+					900: '#164e63',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +99,24 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'slide-up': {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.8s ease-out',
+				'slide-up': 'slide-up 0.8s ease-out'
+			},
+			fontFamily: {
+				sans: ['Poppins', 'sans-serif']
 			}
 		}
 	},
